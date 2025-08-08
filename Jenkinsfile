@@ -9,6 +9,11 @@ pipeline {
       steps {
         echo 'building the application...'
         echo "building the application version : ${NEW_VERSION}"
+        withCredentials ([
+          usernamePassword(credentials: 'myextrepository', usernameVariable: USR, passwordVariable: PWD)
+        ]) {
+          echo "we got these credentials from the store: ${USR}, ${PWD}"
+        }
       }
     }
     
