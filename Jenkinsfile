@@ -2,6 +2,7 @@ pipeline {
   agent any
   environment {
     NEW_VERSION = '1.3.0'
+    SERVER_CREDENTIAL = credentials('firstmultipipetest')
   }
   stages {
     stage("build") {
@@ -26,6 +27,7 @@ pipeline {
       steps{
         echo 'deploying the application...'
         echo "deploying the version: ${NEW_VERSION}"
+        echo "server credentials ${SERVER_CREDENTIAL}"
       }
     }
   }
