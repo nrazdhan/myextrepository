@@ -14,7 +14,7 @@ pipeline {
     stage("test") {
       when {
         expression {
-          BRANCH_NAME == 'My2ndBranch' || BRANCH_NAME == 'dev'
+          BRANCH_NAME == 'My2ndbranch' || BRANCH_NAME == 'dev'
         }
       }
       steps{
