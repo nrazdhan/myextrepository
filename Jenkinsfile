@@ -2,7 +2,7 @@ pipeline {
   agent any
   environment {
     NEW_VERSION = '1.3.0'
-    SERVER_CREDENTIAL = credentials('firstmultipipetest')
+    SERVER_CREDENTIAL = credentials('myextrepository')
   }
   stages {
     stage("build") {
