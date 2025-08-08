@@ -2,18 +2,18 @@ pipeline {
   agent any
   environment {
     NEW_VERSION = '1.3.0'
-    SERVER_CREDENTIAL = credentials('myextrepository')
+    // SERVER_CREDENTIAL = credentials('myextrepository')
   }
   stages {
     stage("build") {
       steps {
         echo 'building the application...'
         echo "building the application version : ${NEW_VERSION}"
-        withCredentials ([
-          usernamePassword(credentials: 'myextrepository', usernameVariable: USR, passwordVariable: PWD)
-        ]) {
-          echo "we got these credentials from the store: ${USR}, ${PWD}"
-        }
+        // withCredentials ([
+        //   usernamePassword(credentials: 'myextrepository', usernameVariable: USR, passwordVariable: PWD)
+        // ]) {
+        //   echo "we got these credentials from the store: ${USR}, ${PWD}"
+        // }
       }
     }
     
@@ -33,7 +33,7 @@ pipeline {
         echo 'deploying the application...'
         echo "deploying the version: ${NEW_VERSION}"
         echo "server credentials ${SERVER_CREDENTIAL}"
-        sh "${SERVER_CREDENTIAL}"
+        // sh "${SERVER_CREDENTIAL}"
       }
     }
   }
