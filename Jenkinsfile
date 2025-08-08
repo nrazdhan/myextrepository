@@ -32,7 +32,7 @@ pipeline {
       steps{
         echo 'deploying the application...'
         echo "deploying the version: ${NEW_VERSION}"
-        echo "server credentials ${SERVER_CREDENTIAL}"
+        // echo "server credentials ${SERVER_CREDENTIAL}"
         // sh "${SERVER_CREDENTIAL}"
       }
     }
