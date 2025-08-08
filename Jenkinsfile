@@ -9,6 +9,7 @@ pipeline {
       steps {
         echo 'building the application...'
         echo "building the application version : ${NEW_VERSION}"
+        sh "javac HelloWorld/hello.java"
         // withCredentials ([
         //   usernamePassword(credentials: 'myextrepository', usernameVariable: USR, passwordVariable: PWD)
         // ]) {
