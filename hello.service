@@ -1,0 +1,16 @@
+[Unit]
+Description=My Hello Service
+After=multi-user.target
+
+[Service]
+ExecStart=java -cp "/home/ec2-user:/home/ec2-user/*" HelloWorld.hello
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=myHelloService
+User=ec2-user
+EnvironmentFile=/home/ec2-user/HelloWorld/app.env
+
+[Install]
+WantedBy=multi-user.target

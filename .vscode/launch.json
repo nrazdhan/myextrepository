@@ -1,0 +1,104 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "IndexOf",
+            "request": "launch",
+            "mainClass": "HelloWorld.IndexOf",
+            "projectName": "myextrepository_71d34b77"
+        },
+        {
+            "type": "java",
+            "name": "RepeatStringMatch",
+            "request": "launch",
+            "mainClass": "HelloWorld.RepeatStringMatch",
+            "projectName": "myextrepository_71d34b77"
+        },
+        {
+            "type": "java",
+            "name": "PartialStringMatchTable",
+            "request": "launch",
+            "mainClass": "HelloWorld.PartialStringMatchTable",
+            "projectName": "myextrepository_71d34b77"
+        },
+        {
+            "type": "java",
+            "name": "GoodStrings",
+            "request": "launch",
+            "mainClass": "HelloWorld.GoodStrings",
+            "projectName": "myextrepository_71d34b77"
+        },
+        {
+            "type": "java",
+            "name": "HappyPrefix",
+            "request": "launch",
+            "mainClass": "HelloWorld.HappyPrefix",
+            "projectName": "myextrepository_71d34b77"
+        },
+        {
+            "type": "java",
+            "name": "ShortestPalidrome",
+            "request": "launch",
+            "mainClass": "HelloWorld.ShortestPalidrome",
+            "projectName": "myextrepository_71d34b77"
+        },
+        {
+            "type": "java",
+            "name": "CutOffTrees",
+            "request": "launch",
+            "mainClass": "HelloWorld.CutOffTrees",
+            "projectName": "myextrepository_71d34b77"
+        },
+        {
+            "type": "java",
+            "name": "DungeonGame",
+            "request": "launch",
+            "mainClass": "HelloWorld.DungeonGame",
+            "projectName": "myextrepository_71d34b77"
+        },
+        {
+            "type": "java",
+            "name": "maxAreaMatrix",
+            "request": "launch",
+            "mainClass": "HelloWorld.maxAreaMatrix",
+            "projectName": "myextrepository_71d34b77"
+        },
+        {
+            "type": "java",
+            "name": "solveSudoku",
+            "request": "launch",
+            "mainClass": "HelloWorld.solveSudoku",
+            "projectName": "myextrepository_71d34b77"
+        },
+        {
+            "type": "java",
+            "name": "MinTicketCost",
+            "request": "launch",
+            "mainClass": "HelloWorld.MinTicketCost",
+            "projectName": "myextrepository_71d34b77"
+        },
+        {
+            "type": "java",
+            "name": "hello",
+            "request": "launch",
+            "mainClass": "HelloWorld.hello",
+            "projectName": "myextrepository_71d34b77",
+            "classPaths": [
+                "${workspaceFolder}",
+                "${workspaceFolder}/*"
+            ],
+            "sourcePaths": [
+                "${workspaceFolder}/HelloWorld"
+            ],
+            "env": {
+                "JDBC_URL": "jdbc:mysql://ec2-3-14-3-164.us-east-2.compute.amazonaws.com:3306/naveen",
+                "JDBC_USER": "guest",
+                "JDBC_PASSWORD": "Danzar12%#1"
+            }
+        }
+    ]
+}
